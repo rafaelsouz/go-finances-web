@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 interface ContainerProps {
   size?: 'small' | 'large';
+  page?: 'dashboard' | 'import';
 }
 
 export const Container = styled.div<ContainerProps>`
@@ -17,6 +18,10 @@ export const Container = styled.div<ContainerProps>`
     justify-content: space-between;
 
     nav {
+      .selected {
+        border-bottom: #ff872c 2px solid;
+        padding-bottom: 10px;
+      }
       a {
         color: #fff;
         text-decoration: none;
