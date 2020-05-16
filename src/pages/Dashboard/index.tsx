@@ -68,7 +68,7 @@ const Dashboard: React.FC = () => {
 
   return (
     <>
-      <Header page="dashboard" />
+      <Header />
       <Container>
         <CardContainer>
           <Card>
@@ -85,7 +85,7 @@ const Dashboard: React.FC = () => {
             </header>
             <h1 data-testid="balance-outcome">{balance.outcome}</h1>
           </Card>
-          <Card total>
+          <Card className="total">
             <header>
               <p>Total</p>
               <img src={total} alt="Total" />

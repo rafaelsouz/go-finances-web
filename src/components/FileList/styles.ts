@@ -24,7 +24,7 @@ export const FileInfo = styled.div`
   button {
     border: 0;
     background: transparent;
-    color: #e83f5b;
+    color: ${props => props.theme.colors.red};
     margin-left: 5px;
     cursor: pointer;
   }

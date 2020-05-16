@@ -13,7 +13,7 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
   font-size: 48px;
-  color: #3a3a3a;
+  color: ${props => props.theme.colors.titles};
 `;
 
 export const CardContainer = styled.section`
@@ -24,10 +24,15 @@ export const CardContainer = styled.section`
 `;
 
 export const Card = styled.div`
-  background: ${({ total }: CardProps): string => (total ? '#FF872C' : '#fff')};
+  &.total {
+    background: ${props => props.theme.colors.total};
+    color: ${props => props.theme.colors.mainShape};
+  }
+
+  background: ${props => props.theme.colors.card};
   padding: 22px 32px;
   border-radius: 5px;
-  color: ${({ total }: CardProps): string => (total ? '#fff' : '#363F5F')};
+  color: ${props => props.theme.colors.titles};
 
   header {
     display: flex;
@@ -55,7 +60,7 @@ export const TableContainer = styled.section`
     border-spacing: 0 8px;
 
     th {
-      color: #969cb3;
+      color: ${props => props.theme.colors.texts};
       font-weight: normal;
       padding: 20px 32px;
       text-align: left;
@@ -66,21 +71,21 @@ export const TableContainer = styled.section`
     td {
       padding: 20px 32px;
       border: 0;
-      background: #fff;
+      background: ${props => props.theme.colors.card};
       font-size: 16px;
       font-weight: normal;
-      color: #969cb3;
+      color: ${props => props.theme.colors.texts};
 
       &.title {
-        color: #363f5f;
+        color: ${props => props.theme.colors.titles};
       }
 
       &.income {
-        color: #12a454;
+        color: ${props => props.theme.colors.green};
       }
 
       &.outcome {
-        color: #e83f5b;
+        color: ${props => props.theme.colors.red};
       }
     }
 

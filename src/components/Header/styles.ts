@@ -2,11 +2,10 @@ import styled from 'styled-components';
 
 interface ContainerProps {
   size?: 'small' | 'large';
-  page?: 'dashboard' | 'import';
 }
 
 export const Container = styled.div<ContainerProps>`
-  background: #5636d3;
+  background: ${props => props.theme.colors.blue};
   padding: 30px 0;
 
   header {
@@ -17,13 +16,25 @@ export const Container = styled.div<ContainerProps>`
     align-items: center;
     justify-content: space-between;
 
+    .sun {
+      color: #ffea00;
+      margin-left: 10px;
+      height: 100%;
+    }
+
+    .moon {
+      color: #fff;
+      margin-left: 10px;
+      height: 100%;
+    }
+
     nav {
       .selected {
-        border-bottom: #ff872c 2px solid;
+        border-bottom: ${props => props.theme.colors.orange} 2px solid;
         padding-bottom: 10px;
       }
       a {
-        color: #fff;
+        color: ${props => props.theme.colors.mainShape};
         text-decoration: none;
         font-size: 16px;
         transition: opacity 0.2s;
