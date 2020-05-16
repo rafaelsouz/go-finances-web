@@ -4,6 +4,8 @@
 
 <h2 align="center"> Tema Light </h2>
 
+---
+
 <h2 align="center">
   Listagem
   <br/>
@@ -19,6 +21,8 @@
 </h2>
 
 <h2 align="center"> Tema Dark </h2>
+
+---
 
 <h2 align="center">
   Listagem
