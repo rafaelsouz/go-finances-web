@@ -4,10 +4,9 @@
 
 <h2 align="center"> Tema Light </h2>
 
----
-
 <h2 align="center">
   Listagem
+  <br/>
   <br/>
   <img src='github/dashboard-light.png' width=800/>
 </h2>
@@ -15,17 +14,15 @@
 <h2 align="center">
   Importar
   <br/>
+  <br/>
   <img src='github/importar-light.png' width=800/>
 </h2>
 
----
-
 <h2 align="center"> Tema Dark </h2>
-
----
 
 <h2 align="center">
   Listagem
+  <br/>
   <br/>
   <img src='github/dashboard-dark.png' width=800/>
 </h2>
@@ -33,10 +30,9 @@
 <h2 align="center">
   Importar
   <br/>
+  <br/>
   <img src='github/importar-dark.png' width=800/>
 </h2>
-
----
 
 # Indice
 
